@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Your Car</title>
+</head>
+
+
+<style type="text/css">
+   
+   .form2rent{
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            font-family: sans-serif;
+            top: -6%;
+            left: 61.1%;
+            transform: translate(-50%,0%);
+            position:absolute;
+        }
+        
+        .form2{
+          display: block;
+          background-color: white;
+          margin-top: 50px;
+          text-align: center;
+          border: 1px solid;
+          border-radius: 20px;
+          box-shadow: 1px 2px #081436 ;
+        }
+        
+        .form2:hover{
+            transform: scale(1.006);
+        }
+        
+        .formrent{
+            display:block;
+            width: 430px;
+            height: 40px;
+            margin:20px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-bottom: 1px solid #081436;
+        }
+        
+        .rentbutton{
+            width: 430px;
+            height: 40px;
+            font-size: 20px;
+            color: cornsilk;
+            border: none;
+            background-color:#081436;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border-radius: 50% 20% / 10% 40%;
+        }
+    
+        .closerent{
+            width: 430px;
+            height: 40px;
+            font-size: 20px;
+            color: cornsilk;
+            border: none;
+            background-color:#9D2C2C;
+            margin-bottom: 7px;
+            border-radius: 50% 20% / 10% 40%;
+        }
+
+        
+        .vehiclerent{
+            color: red;
+        }
+    
+        
+    
+        .form2 h1{
+            margin-bottom: 30px;
+            color: #081436;
+            font-size: 37px;
+        }
+        
+        ::placeholder{
+            color: black;
+            display: block;
+        }
+
+
+</style>
+
+<body style="background-image: url('rentcar.jpg');background-repeat: no-repeat;background-color: rgb(7, 40, 53);">
+    <div class="form2rent" id="myform2">
+        <form class="form2">
+            <h1>Rent Your Car</h1>
+    
+            <input class="formrent" type="text" name="" placeholder="Owner Name">
+            <input class="formrent" type="tel" name="" placeholder="Mobile Number">
+            <input class="formrent" type="text"  name="" placeholder="Address">
+            <input class="formrent" type="email" name="" placeholder="email">
+            <input class="formrent" type="text" name="" placeholder="Vehicle Type">
+            <input class="formrent" type="text" name="" placeholder="Model Name">
+            <input class="formrent" type="text" name="" placeholder="Model Year">
+            <input class="formrent" type="email" name="" placeholder="Vehicle Registration Number">
+    
+            <input type="checkbox" id="vehiclerent" name="vehiclerent">
+            <label class="vehiclerent"for="vehiclerent">I hereby state that all the information<br>stated above are authentic</label><br>
+    
+            <button class="rentbutton" type="submit">Submit</button><br>
+            <button formaction="Home.html" id="closerentform" class="closerent" type="submit">Go back home</button>
+        </form>
+        </div>
+
+    
+
+</body>
+</html>
