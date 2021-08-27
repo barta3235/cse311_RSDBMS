@@ -1,0 +1,408 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+    font-size: large;
+}
+
+.bookacar a{
+    font-size: 18px;
+    text-decoration: none;
+    color: cornsilk;
+    border-radius: 30px;
+}
+
+.bookacar a:hover{
+    font-size: 25px;
+    background:#9D2C2C;
+}
+
+.nav1{
+    margin-top: 2px;
+    background: #081436;
+    padding: 15px 40px 15px 70px;
+    border: 1px solid;
+    border-radius: 20px;
+    border-left: none;
+    border-right: none;
+}
+
+.nav2{
+    margin-top: 4px;   /*#6984d*/
+    text-align: center;
+    background: transparent;
+    padding: 30px 40px 30px 70px;
+    margin-left: -1.8%;
+}
+
+.nav1 ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav2 ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav1 ul li.Logo{
+    flex:1;
+    font-size: 50px;
+    font-weight: 700;
+    color: cornsilk;
+}
+
+nav ul div.navbarItems1{
+    padding: 0 25px;
+    display: inline-flex;
+}
+nav ul div.navbarItems2{
+    padding: 0 25px;
+    display: inline-flex;
+}
+
+nav ul div.navbarItems1 a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 12px;
+    color: cornsilk ;
+}
+
+nav ul div.navbarItems2 a{
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0 11px 0 11px;
+    color:whitesmoke ;  /*#1F2E58*/
+    background:#081436;
+}
+
+.nav1 ul ul{
+    display: none;
+}
+
+/* adding new 
+
+.nav2 ul ul{
+    display: none;
+}
+
+.navbarItems2 li :hover ul.nav2dd{
+    display: block;
+} 
+.navbarItems2 li ul.nav2dd{
+   min-width: 100%;
+} */
+
+
+
+/*ending adding new*/
+
+.navbarItems1 li:hover> ul{
+    display: block;
+}   
+
+.navbarItems1 li:hover{
+    background-color:#20305D;
+}
+
+.navbarItems2 li:hover{
+    transform: scale(1.5);
+}
+
+.navbarItems2 li a:hover{
+    color: whitesmoke;
+    background-color: #9D2C2C;
+}
+
+.navbarItems1 li ul li:hover{
+    background-color:#9D2C2C;
+}
+
+
+/*     Image slider start */
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  padding-top: 10px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*     Image slider ends */
+
+
+/*   Feedback box starts*/
+
+.contact-box{
+    width: 700px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    left: 35%;
+    margin-top: 16%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.feedback{
+    margin: 35px;
+}
+
+.input-feild{
+    width: 600px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+    
+}
+
+.button1{
+    display: inline-block;
+    padding: 10px 25px 25px 66px ;
+    margin-left: 72%;
+    margin-top: 2%;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #9D2C2C;
+    color: cornsilk;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+  .button1:hover {background-color: #3e8e41}
+
+.button1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+
+.video1{
+    margin-left: 63%;
+    margin-top: -2%;
+}
+
+.text-center text-white fixed-bottom{
+    margin-top: 50%;
+}
+
+/*    Image slider ends */
+
+
+/* Footer start*/
+ 
+  footer{
+      background-color:#11255c ;
+      color: #fff;
+      margin-top: 0;
+
+  }
+ 
+  .footer_info{
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      padding: 50px 0;
+  }
+
+  .footer_info h2{
+      margin-bottom: 20px;
+  }
+
+  .about, .contact{
+      width: 50%;
+  }
+
+  .footer_info .footer_width{
+      padding: 0 15px;
+  }
+
+
+  .link{
+      width: 20%;
+  }
+
+  .social-media{
+      margin-top: 30px;
+  }
+
+  .social-media ul{
+      display: flex;
+  }
+
+  .social-media ul li a {
+      display: inline-block;
+      margin-right: 50px;
+      width: 50px;
+      height: 50px;
+      padding-top: 12px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      text-align: center;
+  }
+
+  .link ul li a {
+      display: block;
+      margin-left: 20px;
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: whitesmoke;
+      text-decoration: none;
+  }
+
+  .contact ul li{
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+  }
+
+  .contact ul li p{
+      color: cornsilk;
+  }
+
+.copy-right{
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    background-color:#081436;
+    text-decoration: none;
+}
+
+.help247{
+    padding-left: 5px;
+    padding-right: 0px;
+}
+
+.help247:hover{
+    transform: scale(1.09);
+}
+
+/* Footer end*/
+
+body{
+    background-image: url(pp.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+
+
+
+
+
+       
+
+
+
+        
