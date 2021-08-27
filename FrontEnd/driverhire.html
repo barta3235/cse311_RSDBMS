@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Hire</title>
+</head>
+
+<style type="text/css">
+   
+   .form3driverhire{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 496px;
+            font-family: sans-serif;
+            top:-6.5%;
+            left: 62%;
+            transform: translate(-50%,0%);
+            position:absolute;
+        }
+        
+        .form3{
+          display: block;
+          background-color: white;
+          margin-top: 50px;
+          text-align: center;
+          border: 1px solid;
+          border-radius: 18px;
+          box-shadow: 1px 2px #081436 ;
+          width: 500px;
+        }
+        
+        .form3:hover{
+            transform: scale(1.006);
+        }
+        
+        .formdriverhire{
+            display:block;
+            width: 430px;
+            height: 40px;
+            margin:18px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-bottom: 1px solid #081436;
+            background:transparent;
+        }
+
+        
+        .drivehirebutton{
+            width: 430px;
+            height: 40px;
+            font-size: 20px;
+            color: cornsilk;
+            border: none;
+            background-color:#081436;
+            margin-top: 3px;
+            margin-bottom: 2px;
+            border-radius: 50% 20% / 10% 40%;
+        }
+    
+        .closedrivehire{
+            width: 430px;
+            height: 40px;
+            font-size: 20px;
+            color: cornsilk;
+            border: none;
+            background-color:#9D2C2C;
+            margin-bottom: 3px;
+            border-radius: 50% 20% / 10% 40%;
+        }
+
+        
+        .driverhire{
+            color: red;
+        }
+    
+        
+    
+        .form3 h1{
+            margin-bottom: 15px;
+            color: #081436;
+            font-size: 30px;
+        }
+        
+        ::placeholder{
+            color: black;
+            display: block;
+        }
+
+
+</style>
+
+
+<body style="background-image: url('driverphoto.jpg');background-repeat: no-repeat;background-color: rgb(7, 40, 53);">
+     
+    <div class="form3driverhire" id="myform3">
+        <form class="form3">
+            <h1>Become a Driver</h1>
+    
+            <input class="formdriverhire" id="hd1" type="text" name="" placeholder="First Name">
+            <input class="formdriverhire" type="text" name="" placeholder="Last Name">
+            <input class="formdriverhire" type="date"  name="" placeholder="Age">
+            <input class="formdriverhire" type="text" name="" list="gen" placeholder="Gender">
+            <datalist id="gen">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </datalist>
+            <input class="formdriverhire" type="tel" name="" placeholder="Mobile Number">
+            <input class="formdriverhire" type="text" name="" placeholder="NID Number">
+            <input class="formdriverhire" type="text" name="" placeholder="License Number">
+            <input class="formdriverhire" type="email" name="" placeholder="Email">
+            <input class="formdriverhire" type="text" name="" placeholder="Experience">
+            <input type="checkbox" id="driverhire" name="driverhire">
+            <label class="driverhire" for="driverhire">I hereby state that all the information<br>stated above are authentic</label><br>
+            <button class="drivehirebutton" type="submit">Submit</button><br>
+            <button formaction="Home.html" id="closedrivehireform" class="closedrivehire" type="submit">Go back home</button>
+        </form>
+        </div>
+    
+
+</body>
+</html>
+

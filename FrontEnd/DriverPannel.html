@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Pannel</title>
+</head>
+
+<style type="text/css">
+  
+  .formbookingclass{
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            font-family: sans-serif;
+            top: -51%;
+            left: 64%;
+            transform: translate(-50%,50%);
+            position: fixed;
+        }
+        
+        .mybookingform{
+          display: block;
+          background-color: white;
+          margin-top: 25px;
+          text-align: center;
+          border: 1px solid;
+          border-radius: 20px;
+          box-shadow: 1px 2px #081436 ;
+          width: 560px;
+          height: 720px;
+        }
+        
+        .mybookingform:hover{
+            transform: scale(1.006);
+        }
+        
+        .formbook{
+           margin: 3%;
+           font-size: 20px;
+        }
+        
+        .endbutton{
+            width: 150px;
+            height: 40px;
+            font-size: 18px;
+            color: cornsilk;
+            border: none;
+            background-color:#081436;
+            margin-top: 20px;
+            border-radius: 50% 20% / 10% 40%;
+        }
+    
+        .closebook{
+            width: 430px;
+            height: 40px;
+            font-size: 20px;
+            color: cornsilk;
+            border: none;
+            background-color:#9D2C2C;
+            margin-top: 13px;
+            border-radius: 50% 20% / 10% 40%;
+        }    
+        
+        .mybookingform h1{
+            margin-bottom: 30px;
+            color: #081436;
+            font-size: 35px;
+        }
+        
+        ::placeholder{
+            color: rgb(97, 94, 94);
+            display: block;
+        }
+
+        .lab{
+            font-size: 22px;
+        }
+
+  
+  
+</style>
+
+<body style="background-image: url('driverphoto.jpg');background-repeat: no-repeat;background-color: rgb(7, 40, 53);">
+
+    <div class="formbookingclass" id="mybookingdiv_id">
+        <form class="mybookingform">
+            <h1>Driver Pannel</h1>
+
+           
+           <label class="lab" for="Did">Driver ID: </label>
+           <span>
+               <input class="formbook" name="Did" id="test" type="text"/>
+           </span><br>
+
+           <label class="lab" for="vi">Vehicle ID: </label>
+           <span>
+               <input class="formbook" name="vi" id="test" type="text"/>
+           </span><br>
+
+           <label class="lab" for="cn">Customer Name: </label>
+           <span>
+               <input class="formbook" name="cn" id="test" type="text"/>
+           </span><br>
+
+           <label class="lab" for="cm">Customer Mobile Number: </label>
+           <span>
+               <input class="formbook" name="cm" id="test" type="text"/>
+           </span><br>
+
+           <label class="lab" for="dat">Date: </label>
+           <span>
+               <input class="formbook" name="dat" id="test" type="text"/>
+           </span><br>
+
+           <label class="lab" for="sl">Start Location: </label>
+           <span>
+               <input class="formbook" name="dat" id="test" type="text"/>
+           </span><br>
+
+           <label class="lab" for="st">Start Time: </label>
+           <span>
+               <input class="formbook" name="dat" id="test" type="text" placeholder="HH : MM"/>
+           </span><br>
+
+           <label class="lab" for="el">End Loaction: </label>
+           <span>
+               <input class="formbook" name="el" id="test" type="text"/>
+           </span><br>
+
+           <label class="lab" for="et">End Time: </label>
+           <span>
+               <input class="formbook" name="et" id="test" type="text" placeholder="HH : MM"/>
+           </span><br>
+
+            <button class="endbutton" type="submit">Journey Ends</button>
+            <button onclick="myJourneyEnd2()" formaction="Home.html" id="closebookform" class="closebook" type="submit">Go back home</button>
+        </form>
+    </div>
+</body>
+</html>
