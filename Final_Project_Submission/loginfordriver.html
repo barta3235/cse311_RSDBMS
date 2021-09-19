@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Hire</title>
+</head>
+
+<style type="text/css">
+   
+   .form3driverhire{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 496px;
+            align-self: center;
+            font-family: sans-serif;
+            position:absolute;
+        }
+        
+        .form3{
+          display: block;
+          background-color: white;
+          margin-top: 50px;
+          text-align: center;
+          border: 1px solid;
+          border-radius: 18px;
+          box-shadow: 1px 2px #081436 ;
+          width: 500px;
+          margin-top: 50%;
+          margin-left: 190%;
+        }
+        
+        .form3:hover{
+            transform: scale(1.006);
+        }
+        
+        .formdriverhire{
+            display:block;
+            width: 430px;
+            height: 40px;
+            margin:18px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-bottom: 1px solid #081436;
+            background:transparent;
+        }
+
+        
+        .drivehirebutton{
+            width: 430px;
+            height: 40px;
+            font-size: 20px;
+            color: cornsilk;
+            border: none;
+            background-color:#081436;
+            margin-top: 3px;
+            margin-bottom: 2px;
+            border-radius: 50% 20% / 10% 40%;
+        }
+    
+        .closedrivehire{
+            width: 430px;
+            height: 40px;
+            font-size: 25px;
+            color: cornsilk;
+            border: none;
+            background-color:#9D2C2C;
+            margin-bottom: 3px;
+            border-radius: 50% 20% / 10% 40%;
+        }
+
+        
+        .driverhire{
+            color: red;
+        }
+    
+        
+    
+        .form3 h1{
+            margin-bottom: 15px;
+            color: #081436;
+            font-size: 30px;
+        }
+        
+        ::placeholder{
+            color: black;
+            display: block;
+        }
+
+
+</style>
+
+
+<body style="background-image:url(./neueimages/adminback.png); background-repeat: no-repeat;background-position: center;background-size: cover;background-attachment: fixed;">
+     
+    <div class="form3driverhire" id="myform3">
+        <form class="form3" action="./loginfordriverconnection.php" method="POST">
+            <h1>Driver Login</h1>
+            <input class="formdriverhire" id="hd1" type="text" name="dname" placeholder="First Name" required>
+            <input class="formdriverhire" id="hd1" type="text" name="dphone" placeholder="Phone Number" required>
+            <input class="formdriverhire" type="password" name="dpass" placeholder="Password" required>
+            <input class="drivehirebutton" name="dbut" type="submit"><br>
+            <a href="Home.html" id="closedrivehireform" class="closedrivehire">Go back home</a>
+        </form>  
+        </div>
+    
+
+</body>
+</html>
+
